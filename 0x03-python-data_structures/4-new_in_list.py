@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def nen_list(my_list, idx, element):
     newlist = []
 
