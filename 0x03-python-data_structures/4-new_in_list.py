@@ -2,8 +2,7 @@
 def new_in_list(my_list, idx, element):
     newlist = []
 
-    for i in my_list:
-        newlist.append(i)
+    newlist = mylist.copy()
 
     if idx < 0:
         return newlist
