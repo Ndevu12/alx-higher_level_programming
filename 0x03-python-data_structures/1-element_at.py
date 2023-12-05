@@ -6,5 +6,4 @@ def element_at(my_list, idx):
         return None
     else:
         take = my_list.pop(idx)
-        print(f"Element at index {idx} is {take})
-
+        return take
