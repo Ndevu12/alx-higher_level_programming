@@ -35,29 +35,29 @@ class Square:
          Return:
             Size of square
         """
-       return self.__size
+        return self.__size
 
-   @size.setter
-   def size(self, value):
-       """
+    @size.setter
+    def size(self, value):
+        """
 
-       etter of size
-       Args:
-       size (int): size of a side of the square
-        Raises:
+        etter of size
+        Args:
+           size (int): size of a side of the square
+         Raises:
             TypeError: if size is not int
             ValueError: size less than 0
 
-        Returns:
+         Returns:
              None
              """
 
-          if type(value) is not int:
-              raise TypeError("size must be an integer")
-          elif value < 0:
-              raise ValueError("size must be >= 0")
-          else:
-              self.__size = value
+         if type(value) is not int:
+             raise TypeError("size must be an integer")
+         elif value < 0:
+             raise ValueError("size must be >= 0")
+         else:
+             self.__size = value
     def my_print(self):
         """
 
@@ -69,6 +69,6 @@ class Square:
 
          if self.__size == 0:
              print()
-            else:
-                for x in range(self.size):
-                     print("#" * self.size)
+         else:
+             for x in range(self.size):
+                 print("#" * self.size)
