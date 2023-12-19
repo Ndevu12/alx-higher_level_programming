@@ -3,7 +3,7 @@
 Singly linked list Module
 """
 
-class Node:
+class None:
     """
     Node class
     Attributes:
@@ -87,27 +87,27 @@ class SinglyLinkedList:
         tmp = self.__head
         while tmp is not None:
             result += str(self.data)
-              result += '\n'
-              tmp = tmp.__next_node
-          return result
+            result += '\n'
+            tmp = tmp.__next_node
+            return result
 
-      def sorted_insert(self, value):
-          """
-           Inserts new Node into the correct soeted position
-           """
-          if self.__head is None:
-              self.__head = Node(value)
-          else:
-              new_node = Node(value)
-              tmp = self.__head
-              while tmp is not None:
-                  if tmp.__next_node is None:
-                      tmp.__next_node = new_node
-                      new_node.__next_node = None
-                  if new_node.__data < tmp.__next_node.__data:
-                      new_node.__next_node = tmp.__next_node
-                      tmp.__next_node = new_node
-                      tmp = tmp.__next_node
+    def sorted_insert(self, value):
+        """
+        Inserts new Node into the correct soeted position
+        """
+        if self.__head is None:
+            self.__head = Node(value)
+        else:
+            new_node = Node(value)
+            tmp = self.__head
+            while tmp is not None:
+                if tmp.__next_node is None:
+                    tmp.__next_node = new_node
+                    new_node.__next_node = None
+                if new_node.__data < tmp.__next_node.__data:
+                    new_node.__next_node = tmp.__next_node
+                    tmp.__next_node = new_node
+                    tmp = tmp.__next_node
 
 
 
