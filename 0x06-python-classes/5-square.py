@@ -52,12 +52,12 @@ class Square:
              None
              """
 
-         if type(value) is not int:
-             raise TypeError("size must be an integer")
-         elif value < 0:
-             raise ValueError("size must be >= 0")
-         else:
-             self.__size = value
+        if type(value) is not int:
+            raise TypeError("size must be an integer")
+        elif value < 0:
+            raise ValueError("size must be >= 0")
+        else:
+            self.__size = value
     def my_print(self):
         """
 
@@ -67,8 +67,8 @@ class Square:
         None
         """
 
-         if self.__size == 0:
-             print()
-         else:
-             for x in range(self.size):
-                 print("#" * self.size)
+        if self.__size == 0:
+            print()
+        else:
+            for x in range(self.size):
+                print("#" * self.size)
