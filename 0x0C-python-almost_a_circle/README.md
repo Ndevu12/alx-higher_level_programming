@@ -1,7 +1,10 @@
-#Description
-Repository to study the following Python topics: Almost a circle. This project will help you be ready for it.
+# Desciription
 
-In this project, you will review everything about Python:
+Repository to study the following Python topics: Almost a circle. 
+
+This project will help you be ready for it.
+
+# In this project, you will review everything about Python:
 
 Import
 Exceptions
